@@ -1,5 +1,5 @@
 - name: ping response
-  hosts: Nodes
+  hosts: localhost
   become: yes
   tasks:
     - name: ping response
