@@ -8,7 +8,7 @@
       state: latest
   - name: Ensure apache service is running and enabled at boot
     ansible.builtin.systemd_service:
-      name: mysql
+      name: mysqld
       state: started
       enabled: yes
   - name: apache server install and start from localhost
