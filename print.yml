@@ -3,8 +3,8 @@
   tasks:
   - name: print hello world
     ansible.builtin.debug:
-      msg: echo Hello world2 >>/tmp/test/file.txt
-      
+      msg: echo Hello world2
+
   - name: shell module
     ansible.builtin.shell: echo Hello world2 >>/tmp/test/file.txt
 
