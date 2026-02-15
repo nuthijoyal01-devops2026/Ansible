@@ -1,0 +1,8 @@
+- name: ping response
+  hosts: Nodes
+  become: yes
+  tasks:
+    - name: ping response
+      ansible.builtin.ping:
+      register: ping_result
+    
