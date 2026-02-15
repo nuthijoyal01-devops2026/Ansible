@@ -3,6 +3,6 @@
   tasks:
   - name: print hello world
     ansible.builtin.debug:
-      msg: echo Hello world
+      msg: echo Hello world2 >>/tmp/test/file.txt
     
     
