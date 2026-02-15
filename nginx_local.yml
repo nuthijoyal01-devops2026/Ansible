@@ -1,15 +1,7 @@
 - name: apache server & snmpd server install and start from localhost
   hosts: localhost
   tasks:
-  - name: apache server install and start from localhost
-    ansible.builtin.dnf:
-      name: apache2
-      state: latest
-  - name: Ensure apache service is running and enabled at boot
-    ansible.builtin.systemd_service:
-      name: apache2
-      state: started
-      enabled: yes
+ 
   - name: apache server install and start from localhost
     ansible.builtin.dnf:
       name: mysql
