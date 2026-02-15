@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: nginx service needs to be installed and run
-    ansible.builtin.apt:
+    ansible.builtin.dnf:
       name: nginx
       state: latest
 
