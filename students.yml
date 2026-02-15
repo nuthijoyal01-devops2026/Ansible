@@ -1,0 +1,18 @@
+#student record
+joyal:
+  - name: "joel"
+    age: 37
+    rollNo: 66
+    height: 5.0
+    email: nuthij@gmail.com
+caleb:
+  - name: "caleb"
+    age: 08
+    sex: male
+    rollNo: 08
+    grade: 1st
+    email: caleb@gmail.com
+address:
+
+---
+

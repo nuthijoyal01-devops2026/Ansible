@@ -1,0 +1,12 @@
+- name: copy file from master to node1
+  hosts: Node1
+  become: yes
+  tasks:
+  - name: "copy file form master to node1"
+    ansible.builtin.copy:
+     src: /tmp/test/file1
+     dest: /tmp/test1
+     owner: root
+     group: root
+    
+    
