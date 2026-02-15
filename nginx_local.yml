@@ -1,6 +1,6 @@
 - name: apache server & snmpd server install and start from localhost
   hosts: localhost
-  task:
+  tasks:
   - name: apache server install and start from localhost
     ansible.builtin.dnf:
       name: apache2
