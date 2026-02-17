@@ -1,5 +1,5 @@
 - name: variables
-  hosts: nodes
+  hosts: Nodes
   vars: 
     username: "caleb"
     age: 8
