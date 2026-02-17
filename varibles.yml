@@ -1,0 +1,10 @@
+- name: variables
+  hosts: nodes
+  vars: 
+    username: "caleb"
+    age: 8
+    phone: 7383823322
+  tasks:
+  - name: print hello world
+    ansible.builtin.debug:
+      msg: "name is {{ username }} & age is {{ age }} & phone is {{ phone }}"
