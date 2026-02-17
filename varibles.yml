@@ -7,6 +7,15 @@
         name: "{{ item }}"
         state: latest
       loop:
-        - mysql
+        - mysql-server
         - nginx
         - zip
+    - name: nginx service needs to start
+      ansible.builtin.service:
+        name: "{{ item }}"
+        state: started
+      loop:
+          - mysqld
+          - nginx
+
+
