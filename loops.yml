@@ -17,5 +17,13 @@
       loop:
           - mysqld
           - nginx
+    - name: services needs to be stop
+        ansible.builtin.service:
+        name: "{{ item }}"
+        state: stopped
+      loop:
+        - mysqld
+        - nginx
+
 
 
