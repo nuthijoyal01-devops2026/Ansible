@@ -1,0 +1,12 @@
+- name: nginx service needs to be installed and run
+  hosts: Nodes
+  become: yes
+  tasks:
+    - name: nginx service needs to be installed and run
+      ansible.builtin.dnf:
+        name: "{{ items }}"
+        state: latest
+      loop:
+        - mysql
+        - nginx
+        - zip
