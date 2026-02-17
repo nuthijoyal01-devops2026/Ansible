@@ -15,15 +15,12 @@
         name: "{{ item }}"
         state: started
       loop:
-          - mysqld
-          - nginx
+        - mysqld
+        - nginx
     - name: services needs to be stop
-        ansible.builtin.service:
+      ansible.builtin.service:
         name: "{{ item }}"
         state: stopped
       loop:
         - mysqld
         - nginx
-
-
-
