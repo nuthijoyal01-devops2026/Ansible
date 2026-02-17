@@ -1,0 +1,11 @@
+- name: var1
+  hosts: Nodes
+  vars:
+    fruits: "apple"
+    vegitables: "carrot"
+    animal: "lion"
+  tasks:
+    - name: reflect the varibles
+      ansible.builtin.debug:
+        msg: "fruit is {{ fruits }} & vegitable is  {{ vegitables }}  & animal is {{ animal}}"
+        
