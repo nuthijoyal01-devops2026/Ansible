@@ -1,0 +1,8 @@
+- name: nginx service 
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: nginx service needs to be install
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
