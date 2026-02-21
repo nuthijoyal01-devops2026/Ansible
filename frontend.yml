@@ -15,13 +15,10 @@
       ansible.builtin.file:
         path: /usr/share/nginx/html/*
         state: absent
-    - name: Download foo.conf
-      ansible.builtin.get_url:
-        url: https://expense-joindevops.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
-        dest: /usr/share/nginx/html/
+   
     - name: Extract foo.tgz into /var/lib/foo
       ansible.builtin.unarchive:
-        src: /usr/share/nginx/html/expense-frontend-v2.zip
+        src: https://expense-joindevops.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
         dest: /usr/share/nginx/html/
         remote_src: yes
 
