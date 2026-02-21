@@ -4,10 +4,16 @@
   tasks:
   - name: nginx service needs to be install
     ansible.builtin.dnf:
-      name: nginx
+      name: {{ item }}
       state: latest
-  - name: install service
-    ansible.builtin.service:
-      name: nginx
-      state: started
-      enabled: yes
+    loops:
+    - nginx
+    - mysql-server
+    - mongodb
+  # - name: install service
+  #   ansible.builtin.service:
+  #     name: nginx
+  #     state: started
+  #     enabled: yes
+    
+      
