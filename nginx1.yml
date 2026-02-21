@@ -10,10 +10,13 @@
     - nginx
     - mysql-server
     - dnf
-  # - name: install service
-  #   ansible.builtin.service:
-  #     name: nginx
-  #     state: started
-  #     enabled: yes
+  - name: install service
+    ansible.builtin.service:
+      name: "{{ item }}"
+      state: started
+      enabled: yes
+    loop:
+    - nginx
+    - mysqld
     
       
