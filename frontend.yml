@@ -1,5 +1,6 @@
 - name: nginx service
   hosts: localhost
+  connection: local
   tasks:
     - name: nginx service needs to be install
       ansible.builtin.dnf:
@@ -12,7 +13,7 @@
         enabled: yes
     - name: Remove file (delete file)
       ansible.builtin.file:
-        path: /usr/share/nginx/html/*
+        path: /usr/share/nginx/html/
         state: absent
 
   #  - name: install service
