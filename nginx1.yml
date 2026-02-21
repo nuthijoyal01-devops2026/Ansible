@@ -4,7 +4,7 @@
   tasks:
   - name: nginx service needs to be install
     ansible.builtin.dnf:
-      name: {{ item }}
+      name: "{{ item }}"
       state: latest
     loops:
     - nginx
