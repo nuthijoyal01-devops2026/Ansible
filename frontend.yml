@@ -19,6 +19,12 @@
       ansible.builtin.get_url:
         url: https://expense-joindevops.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
         dest: /usr/share/nginx/html/
+    - name: Extract foo.tgz into /var/lib/foo
+      ansible.builtin.unarchive:
+        src: /usr/share/nginx/html/expense-frontend-v2.zip
+        dest: /usr/share/nginx/html/
+        remote_src: yes
+
 
   #  - name: install service
   #   ansible.builtin.service:
