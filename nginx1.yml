@@ -9,7 +9,7 @@
     loop:
     - nginx
     - mysql-server
-    - mongo
+    - dnf
   # - name: install service
   #   ansible.builtin.service:
   #     name: nginx
