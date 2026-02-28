@@ -15,7 +15,7 @@
       ansible.builtin.file:
         path: /usr/share/nginx/html/*
         state: absent
-   
+
     - name: Extract foo.tgz into /var/lib/foo
       ansible.builtin.unarchive:
         src: https://expense-joindevops.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
@@ -29,9 +29,3 @@
       ansible.builtin.service:
         name: nginx
         state: restarted
-
-  #  - name: install service
-  #   ansible.builtin.service:
-  #     name: nginx
-  #     state: started
-  #     enabled: yes

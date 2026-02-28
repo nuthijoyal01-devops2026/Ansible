@@ -1,0 +1,22 @@
+- name: joyal
+  dob: 1989-10-12
+  mobile number: 7338400606
+  address:
+    - flat number: 104
+      street: "gandhi nagar"
+      city: hyderabad
+      state: TL
+      type: perm
+- name: caleb
+  dob: 2018-08-11
+  school: Bhashyam
+  school place: Bapatla
+  standard: 2nd class
+  rank: 1st
+  address:
+    - flat number: 3-7
+      place: Appapuram
+      street: peddabazar
+      Mandal: kakumanu
+      Dist: Guntur
+      state: AP

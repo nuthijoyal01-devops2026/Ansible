@@ -1,0 +1,23 @@
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
+    program: "DevSecops with AWS"
+    Duration: 140
+    IS_Live: true
+    Details:
+      Months: 4
+      Trainer: "Siva"
+    Topics:
+      - Linux
+      - shell
+      - Ansible
+  tasks:
+    - name: print variables
+      ansible.built.debug:
+        msg:
+          program: { { Program } }
+          Duration: { { Duration } }
+          IS Live?: { { IS_Live } }
+          Details: { { DETAILS } }
+          Topics: { { TOPICS } }
