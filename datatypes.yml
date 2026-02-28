@@ -16,8 +16,8 @@
     - name: print variables
       ansible.built.debug:
         msg:
-          program: { { Program } }
-          Duration: { { Duration } }
-          IS Live?: { { IS_Live } }
-          Details: { { DETAILS } }
-          Topics: { { TOPICS } }
+          program: "{{ Program }}"
+          Duration: "{{ Duration }}"
+          IS Live?: "{{ IS_Live }}"
+          Details: "{{ DETAILS }}"
+          Topics: "{{ TOPICS }}"
